@@ -72,6 +72,19 @@
 				"type": "event"
 			},
 			{
+				"inputs": [],
+				"name": "CLAIMABLE_AMOUNT",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "address",
@@ -130,6 +143,13 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "claimToken",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
@@ -239,7 +259,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Contract/DltToken.sol": "DltToken"
+			"Contract/ClaimFaucet.sol": "ClaimFaucet"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -253,6 +273,14 @@
 		"remappings": []
 	},
 	"sources": {
+		"Contract/ClaimFaucet.sol": {
+			"keccak256": "0x81600e02e0051a087fee778018bb86ba60bf89ad122fb178f6bc793f35582d24",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://fc3d6ebf7b6d10a8b6b0f275496da97f5c206c2ab000120f009fa3e66a0871ac",
+				"dweb:/ipfs/Qme1podFK7Z2KsKhADA76MxuhQanVDR5ZuWmyQ3PznYfW1"
+			]
+		},
 		"Contract/DltToken.sol": {
 			"keccak256": "0x4a170f94ecb3a4166c220a5170abf021faf380d0397b985f97b5ed7d5dd6d71b",
 			"license": "MIT",
