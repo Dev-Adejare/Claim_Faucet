@@ -31,6 +31,7 @@ contract ClaimFaucet is DltToken{
             require(block.timestamp > (currentUser.lastClaimTime + 1 days), "You claim once after 24 hours");
 
             currentUser.lastClaimTime = block.timestamp;
+            
             currentUser.totalClaimed += CLAIMABLE_AMOUNT;
 
             mint(CLAIMABLE_AMOUNT, msg.sender);
