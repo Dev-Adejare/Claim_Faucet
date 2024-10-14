@@ -230,6 +230,24 @@
 				"type": "function"
 			},
 			{
+				"inputs": [],
+				"name": "getUserData",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "address",
@@ -299,11 +317,11 @@
 	},
 	"sources": {
 		"Contract/ClaimFaucet.sol": {
-			"keccak256": "0x70648c5e44efa553a3ee98409771059f05ed459924fdc1ad8cdb630b89a6fc45",
+			"keccak256": "0x90d648f8d482de3d5678becc32c000dbfb4da4c952bbd49e7f763929af880330",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://19d9b4c179465372299b7512943e6639babd29bcef32baa68d84d0ff08b5cb74",
-				"dweb:/ipfs/Qmf9wwnfndw5qerSL1buQxJA6F3awvcNtHrwLNZyfTP3iM"
+				"bzz-raw://f90dcd61d96a3e09574b5edf4bd296245901011b2773ed22ed1023df5c0779e3",
+				"dweb:/ipfs/QmUCHqm5oBNW51yqtvy34VcPG5CXt4z3duYBkKRac8QKAn"
 			]
 		},
 		"Contract/DltToken.sol": {

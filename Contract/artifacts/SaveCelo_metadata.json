@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.27+commit.40a35a09"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Contract/SaveCelo.sol": "SaveCelo"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Contract/SaveCelo.sol": {
+			"keccak256": "0x06b4f8283cb41ee57620c763303884fd493ba4cb2054a30992955ee3979ed185",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://c7b3987f1f0209b174c462294ce045a88d0095e1f94ba7e09f911f86d6652c36",
+				"dweb:/ipfs/QmeUKczapLAU1Mu4Qq7amKFjTNZHXgJXq8frcFa3GmMG8o"
+			]
+		}
+	},
+	"version": 1
+}
