@@ -1,0 +1,61 @@
+{
+	"compiler": {
+		"version": "0.8.27+commit.40a35a09"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Contract/ClaimFaucetFactory.sol": "ClaimFaucetFactory"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Contract/ClaimFaucet.sol": {
+			"keccak256": "0x90d648f8d482de3d5678becc32c000dbfb4da4c952bbd49e7f763929af880330",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://f90dcd61d96a3e09574b5edf4bd296245901011b2773ed22ed1023df5c0779e3",
+				"dweb:/ipfs/QmUCHqm5oBNW51yqtvy34VcPG5CXt4z3duYBkKRac8QKAn"
+			]
+		},
+		"Contract/ClaimFaucetFactory.sol": {
+			"keccak256": "0x95722774d2d6034f66209f5c344ef42554b8c8df64cd8c0eebfc51752635d5aa",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://117bf756171499e0b2b326cf6e9c8f66fae17aea3f57be82bf93f259ea73701c",
+				"dweb:/ipfs/QmdWXnpYwoRzzrs4qaqaxwQV17Ud2A1z9a678YPDdFgzmb"
+			]
+		},
+		"Contract/DltToken.sol": {
+			"keccak256": "0x4a170f94ecb3a4166c220a5170abf021faf380d0397b985f97b5ed7d5dd6d71b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://1ae7081b1f0f224784cf3706f8470947027eae15ca428a617831f99f39601531",
+				"dweb:/ipfs/QmUJ8did95CEVqjdwNMs2d1JM5kvfakHf1WC77dkWLgjiu"
+			]
+		}
+	},
+	"version": 1
+}
