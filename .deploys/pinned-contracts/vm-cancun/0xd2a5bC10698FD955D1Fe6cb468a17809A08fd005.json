@@ -1,6 +1,6 @@
 {
   "name": "ClaimFaucetFactory",
-  "address": "0xD7ACd2a9FD159E69Bb102A1ca21C9a3e3A5F771B",
+  "address": "0xd2a5bC10698FD955D1Fe6cb468a17809A08fd005",
   "abi": [
     {
       "inputs": [
@@ -59,6 +59,25 @@
           "internalType": "struct ClaimFaucetFactory.DeployedContractInfo[]",
           "name": "",
           "type": "tuple[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_claimFaucet",
+          "type": "address"
+        }
+      ],
+      "name": "getBalanceFromDeployedContract",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
         }
       ],
       "stateMutability": "view",
@@ -152,5 +171,5 @@
     }
   ],
   "filePath": "Faucet/Contract/ClaimFaucetFactory.sol",
-  "pinnedAt": 1729168126478
+  "pinnedAt": 1729170001717
 }
