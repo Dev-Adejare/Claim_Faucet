@@ -6,108 +6,10 @@
 	"output": {
 		"abi": [
 			{
-				"anonymous": false,
-				"inputs": [
-					{
-						"indexed": true,
-						"internalType": "address",
-						"name": "owner",
-						"type": "address"
-					},
-					{
-						"indexed": true,
-						"internalType": "address",
-						"name": "spender",
-						"type": "address"
-					},
-					{
-						"indexed": false,
-						"internalType": "uint256",
-						"name": "value",
-						"type": "uint256"
-					}
-				],
-				"name": "Approval",
-				"type": "event"
-			},
-			{
-				"anonymous": false,
-				"inputs": [
-					{
-						"indexed": true,
-						"internalType": "address",
-						"name": "from",
-						"type": "address"
-					},
-					{
-						"indexed": true,
-						"internalType": "address",
-						"name": "to",
-						"type": "address"
-					},
-					{
-						"indexed": false,
-						"internalType": "uint256",
-						"name": "value",
-						"type": "uint256"
-					}
-				],
-				"name": "Transfer",
-				"type": "event"
-			},
-			{
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "owner",
-						"type": "address"
-					},
-					{
-						"internalType": "address",
-						"name": "spender",
-						"type": "address"
-					}
-				],
-				"name": "allowance",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "spender",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "value",
-						"type": "uint256"
-					}
-				],
-				"name": "approve",
-				"outputs": [
-					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
-					}
-				],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "account",
+						"name": "_address",
 						"type": "address"
 					}
 				],
@@ -123,69 +25,42 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_address",
+						"type": "address"
+					}
+				],
+				"name": "claimToken",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [],
-				"name": "totalSupply",
+				"name": "getSymbol",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "string",
 						"name": "",
-						"type": "uint256"
+						"type": "string"
 					}
 				],
 				"stateMutability": "view",
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "to",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "value",
-						"type": "uint256"
-					}
-				],
-				"name": "transfer",
+				"inputs": [],
+				"name": "getTokenName",
 				"outputs": [
 					{
-						"internalType": "bool",
+						"internalType": "string",
 						"name": "",
-						"type": "bool"
+						"type": "string"
 					}
 				],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "from",
-						"type": "address"
-					},
-					{
-						"internalType": "address",
-						"name": "to",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "value",
-						"type": "uint256"
-					}
-				],
-				"name": "transferFrom",
-				"outputs": [
-					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
-					}
-				],
-				"stateMutability": "nonpayable",
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -202,7 +77,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Contract/ICelo.sol": "IERC20"
+			"Contract/IERC20.sol": "IERC20"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -216,12 +91,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Contract/ICelo.sol": {
-			"keccak256": "0x3f3d12657986f3cc9ac3a4d76779aeb28737f2d68f1ba2fc3e0b4a15f6917d72",
+		"Contract/IERC20.sol": {
+			"keccak256": "0xa8d6ba9ddb2a9aac3887ad84f9d52ff6fc864f2134e729d01502d836cb0c490e",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://af8b84df5b524e9df46480f7f309cf9ab7ef79b5662d08213512d90a21071259",
-				"dweb:/ipfs/QmPjcLF9pM4bijnPF14TY4hwh3NjArgNPZYSrBoWc1Q8Td"
+				"bzz-raw://9f16e5482031e4af9a702bc75861175d084f90e5ff0d47ef426582f23bcdd2e1",
+				"dweb:/ipfs/Qmf2GiHY1ZuRRnHmmje24XrSWsB3uGzN2KzECEkxN8SuL4"
 			]
 		}
 	},

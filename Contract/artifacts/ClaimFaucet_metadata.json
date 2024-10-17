@@ -171,7 +171,13 @@
 				"type": "function"
 			},
 			{
-				"inputs": [],
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_address",
+						"type": "address"
+					}
+				],
 				"name": "claimToken",
 				"outputs": [],
 				"stateMutability": "nonpayable",
@@ -220,24 +226,6 @@
 				"inputs": [],
 				"name": "getTotalSupply",
 				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "getUserData",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					},
 					{
 						"internalType": "uint256",
 						"name": "",
@@ -317,11 +305,11 @@
 	},
 	"sources": {
 		"Contract/ClaimFaucet.sol": {
-			"keccak256": "0x90d648f8d482de3d5678becc32c000dbfb4da4c952bbd49e7f763929af880330",
+			"keccak256": "0x9bbea3dda9a7d95f8c28055c84f01564449a29c907290b04b956051ba2fe5311",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://f90dcd61d96a3e09574b5edf4bd296245901011b2773ed22ed1023df5c0779e3",
-				"dweb:/ipfs/QmUCHqm5oBNW51yqtvy34VcPG5CXt4z3duYBkKRac8QKAn"
+				"bzz-raw://ee13b7e519d10f54a5ef1e5925e9e4b5d085d6302612c79ccb8280f7d48c4feb",
+				"dweb:/ipfs/QmYDq7JGjACq4gFp39sg83WX2QzsegKAB8nzJeygpGaG7i"
 			]
 		},
 		"Contract/DltToken.sol": {

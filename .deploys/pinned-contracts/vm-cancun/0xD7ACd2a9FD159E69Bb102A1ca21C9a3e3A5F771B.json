@@ -1,0 +1,156 @@
+{
+  "name": "ClaimFaucetFactory",
+  "address": "0xD7ACd2a9FD159E69Bb102A1ca21C9a3e3A5F771B",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_claimFaucet",
+          "type": "address"
+        }
+      ],
+      "name": "claimFaucetFromContract",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "_name",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "_symbol",
+          "type": "string"
+        }
+      ],
+      "name": "deployClaimFaucet",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "contractAddress_",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getAllContractDeployed",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "deployer",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "deployedContract",
+              "type": "address"
+            }
+          ],
+          "internalType": "struct ClaimFaucetFactory.DeployedContractInfo[]",
+          "name": "",
+          "type": "tuple[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_claimFaucet",
+          "type": "address"
+        }
+      ],
+      "name": "getInfoFromContract",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getLengthOfDeployedContracts",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint8",
+          "name": "_index",
+          "type": "uint8"
+        }
+      ],
+      "name": "getUserDeployedContractByIndex",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "deployer_",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "deployedContract_",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getUserDeployedContracts",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "deployer",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "deployedContract",
+              "type": "address"
+            }
+          ],
+          "internalType": "struct ClaimFaucetFactory.DeployedContractInfo[]",
+          "name": "",
+          "type": "tuple[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "filePath": "Faucet/Contract/ClaimFaucetFactory.sol",
+  "pinnedAt": 1729168126478
+}
