@@ -1,8 +1,8 @@
 {
-	"id": "ffbe50cd98e7c5c1970ab7712bb1080f",
+	"id": "cc00076d6b4824f8f08d9f18cdf08d27",
 	"_format": "hh-sol-build-info-1",
-	"solcVersion": "0.8.27",
-	"solcLongVersion": "0.8.27+commit.40a35a09",
+	"solcVersion": "0.8.28",
+	"solcLongVersion": "0.8.28+commit.7893614a",
 	"input": {
 		"language": "Solidity",
 		"sources": {
@@ -135,7 +135,7 @@
 							"getTokenName()": "862b092b"
 						}
 					},
-					"metadata": "{\"compiler\":{\"version\":\"0.8.27+commit.40a35a09\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_address\",\"type\":\"address\"}],\"name\":\"balanceOf\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_address\",\"type\":\"address\"}],\"name\":\"claimToken\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getSymbol\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getTokenName\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"Contract/IERC20.sol\":\"IERC20\"},\"evmVersion\":\"cancun\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"Contract/IERC20.sol\":{\"keccak256\":\"0xa8d6ba9ddb2a9aac3887ad84f9d52ff6fc864f2134e729d01502d836cb0c490e\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://9f16e5482031e4af9a702bc75861175d084f90e5ff0d47ef426582f23bcdd2e1\",\"dweb:/ipfs/Qmf2GiHY1ZuRRnHmmje24XrSWsB3uGzN2KzECEkxN8SuL4\"]}},\"version\":1}",
+					"metadata": "{\"compiler\":{\"version\":\"0.8.28+commit.7893614a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_address\",\"type\":\"address\"}],\"name\":\"balanceOf\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_address\",\"type\":\"address\"}],\"name\":\"claimToken\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getSymbol\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getTokenName\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"Contract/IERC20.sol\":\"IERC20\"},\"evmVersion\":\"cancun\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"Contract/IERC20.sol\":{\"keccak256\":\"0xa8d6ba9ddb2a9aac3887ad84f9d52ff6fc864f2134e729d01502d836cb0c490e\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://9f16e5482031e4af9a702bc75861175d084f90e5ff0d47ef426582f23bcdd2e1\",\"dweb:/ipfs/Qmf2GiHY1ZuRRnHmmje24XrSWsB3uGzN2KzECEkxN8SuL4\"]}},\"version\":1}",
 					"storageLayout": {
 						"storage": [],
 						"types": null
