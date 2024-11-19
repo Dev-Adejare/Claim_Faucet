@@ -9,7 +9,6 @@ contract ClaimFaucet is DltToken{
 
     constructor(string memory _name, string memory _symbol) DltToken(_name, _symbol){}
 
-
     struct User{
         uint256 lastClaimTime;
         uint256 totalClaimed;
