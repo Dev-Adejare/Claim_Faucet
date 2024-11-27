@@ -1,6 +1,6 @@
 {
   "name": "ClaimFaucetFactory",
-  "address": "0xd2a5bC10698FD955D1Fe6cb468a17809A08fd005",
+  "address": "0xe41c6e09d6862259f87c68c673ed2032bb6e3d5e",
   "abi": [
     {
       "inputs": [
@@ -171,5 +171,5 @@
     }
   ],
   "filePath": "Faucet/Contract/ClaimFaucetFactory.sol",
-  "pinnedAt": 1729170001717
+  "pinnedAt": 1732714583726
 }
