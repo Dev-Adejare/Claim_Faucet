@@ -50,8 +50,4 @@ contract ClaimFaucet is DltToken{
             emit TokenClaimSuccessful(_address, CLAIMABLE_AMOUNT, block.timestamp);
         }
     }
-
-   
-
-
 }
