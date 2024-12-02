@@ -201,11 +201,11 @@
 	},
 	"sources": {
 		"Contract/ClaimFaucet.sol": {
-			"keccak256": "0xaded816d8b40c4f65031790991f12342f568be6a6229bb2ed4a27410d5516f57",
+			"keccak256": "0xc603ea7c43cf8120820f159b7127bd1956376e1900b5f8c4a5a07b5803837dcb",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://3478e5af7758499ffdae75d506af5168be49387457696b3753143023908c46f6",
-				"dweb:/ipfs/QmazjsSdNojoTjZut4rN7dnkRpNtUXpqwrx7FcfjJKyovk"
+				"bzz-raw://fb23b67708bc3ed5bbf9f4ac62293f1fcc84257d1a616d866fb62530351ca203",
+				"dweb:/ipfs/QmVDPMGSXy78DhJ9y8c5FQuDu5LhQ3QUaUjReaDk6iXwWE"
 			]
 		},
 		"Contract/ClaimFaucetFactory.sol": {
@@ -217,19 +217,19 @@
 			]
 		},
 		"Contract/DltToken.sol": {
-			"keccak256": "0xff04e68d286ff82e22efe4d99a9c41d3c1e03625364efb4c5ceaa718dcb31660",
+			"keccak256": "0x2d243745ee8ab162d5a162773a428265791e3702cb6f8e200935aebc4ffe6824",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://2d64a4b90b77ad10326a0686da9b23e57cd64b1943759b7e7120b72d4fb6ab00",
-				"dweb:/ipfs/QmaoAebqVhHP3d57mGk431ZytoJFt5f54DKByPbrnyGdRJ"
+				"bzz-raw://b9b5e80df66916dd4853ed2b684495c285665ccad027576a288e3f19f5f63cf7",
+				"dweb:/ipfs/QmQNgyNgLZhM2p3epdkZ4E3MBT7eW8vuEx7tJvUqaaPiX7"
 			]
 		},
 		"Contract/IERC20.sol": {
-			"keccak256": "0xcb3f07db2114e12af436f54a01c208ca12bead3387efb7a7a0a61476d6f45d82",
+			"keccak256": "0xa8d6ba9ddb2a9aac3887ad84f9d52ff6fc864f2134e729d01502d836cb0c490e",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://3d1f71972208866d48fadc7686da9dc02ce65ddc47535346898702eb078d6a7e",
-				"dweb:/ipfs/QmSv1BHpKC5Nrxc7jZxhRwmupbW7wVjNAcYeeXGKTxt3Hc"
+				"bzz-raw://9f16e5482031e4af9a702bc75861175d084f90e5ff0d47ef426582f23bcdd2e1",
+				"dweb:/ipfs/Qmf2GiHY1ZuRRnHmmje24XrSWsB3uGzN2KzECEkxN8SuL4"
 			]
 		}
 	},
