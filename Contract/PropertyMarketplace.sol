@@ -5,13 +5,10 @@ import "@openzeppelin/contracts/token/ERC1155/IERC1155.sol";
 import "@openzeppelin/contracts/token/ERC1155/utils/ERC1155Holder.sol";
 import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
-import "@openzeppelin/contracts/utils/math/SafeMath.sol";
 
 contract PropertyMarketplace is ERC1155Holder, ReentrancyGuard, Ownable {
-    using SafeMath for uint256;
-
     IERC1155 public propertyToken;
-    
+
     struct Listing {
         address seller;
         uint256 tokenId;
@@ -28,6 +25,7 @@ contract PropertyMarketplace is ERC1155Holder, ReentrancyGuard, Ownable {
     event TokensPurchased(uint256 indexed listingId, address indexed buyer, uint256 amount, uint256 totalPrice);
 
     constructor(address _propertyTokenAddress) {
+        require(_propertyTokenAddress != address(0), "Invalid token address");
         propertyToken = IERC1155(_propertyTokenAddress);
     }
 
@@ -36,7 +34,7 @@ contract PropertyMarketplace is ERC1155Holder, ReentrancyGuard, Ownable {
         require(pricePerToken > 0, "Price must be greater than 0");
         require(propertyToken.balanceOf(msg.sender, tokenId) >= amount, "Insufficient token balance");
 
-        listingCounter = listingCounter.add(1);
+        listingCounter++;
         listings[listingCounter] = Listing({
             seller: msg.sender,
             tokenId: tokenId,
@@ -66,45 +64,25 @@ contract PropertyMarketplace is ERC1155Holder, ReentrancyGuard, Ownable {
         require(listing.active, "Listing is not active");
         require(amount > 0 && amount <= listing.amount, "Invalid amount");
 
-        uint256 totalPrice = listing.pricePerToken.mul(amount);
+        uint256 totalPrice = listing.pricePerToken * amount;
         require(msg.value >= totalPrice, "Insufficient payment");
 
-        listing.amount = listing.amount.sub(amount);
+        listing.amount -= amount;
         if (listing.amount == 0) {
             listing.active = false;
         }
 
         propertyToken.safeTransferFrom(address(this), msg.sender, listing.tokenId, amount, "");
 
-        payable(listing.seller).transfer(totalPrice);
+        (bool success, ) = listing.seller.call{value: totalPrice}("");
+        require(success, "Transfer to seller failed");
 
         // Refund excess payment
         if (msg.value > totalPrice) {
-            payable(msg.sender).transfer(msg.value.sub(totalPrice));
+            (bool refundSuccess, ) = msg.sender.call{value: msg.value - totalPrice}("");
+            require(refundSuccess, "Refund failed");
         }
 
         emit TokensPurchased(listingId, msg.sender, amount, totalPrice);
     }
-
-    // Allow the contract to receive ERC1155 tokens
-    function onERC1155Received(
-        address,
-        address,
-        uint256,
-        uint256,
-        bytes memory
-    ) public virtual override returns (bytes4) {
-        return this.onERC1155Received.selector;
-    }
-
-    function onERC1155BatchReceived(
-        address,
-        address,
-        uint256[] memory,
-        uint256[] memory,
-        bytes memory
-    ) public virtual override returns (bytes4) {
-        return this.onERC1155BatchReceived.selector;
-    }
 }
-
