@@ -254,11 +254,11 @@
 	},
 	"sources": {
 		"Contract/DltToken.sol": {
-			"keccak256": "0x2d243745ee8ab162d5a162773a428265791e3702cb6f8e200935aebc4ffe6824",
+			"keccak256": "0x41bbc54bdfa2286ff5fdd85c79c7a42b4481e0aa42b95c2c89b87121e96c0671",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://b9b5e80df66916dd4853ed2b684495c285665ccad027576a288e3f19f5f63cf7",
-				"dweb:/ipfs/QmQNgyNgLZhM2p3epdkZ4E3MBT7eW8vuEx7tJvUqaaPiX7"
+				"bzz-raw://caf3a8a5b136172f207a166d9fbcb500a955fb89aac89dc47dd803e5bccc42c9",
+				"dweb:/ipfs/QmQqVHT4mKWfBZYGkhwWW4x7PMuG6kngiyj2BBfzF4hJey"
 			]
 		}
 	},
