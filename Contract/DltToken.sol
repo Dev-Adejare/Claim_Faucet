@@ -101,6 +101,8 @@ contract DltToken {
         address _buyer,
         uint256 _amountOfToken
     ) external {
+        
+        
         //sanity check
         require(_owner != address(0), "Address is not allowed");
         require(_buyer != address(0), "Address is not allowed");
@@ -117,6 +119,7 @@ contract DltToken {
         emit Transfer(_owner, _buyer, _amountOfToken);
     }
 
+    
     function burn(address _address, uint256 _amount) internal {
         balances[_address] = balances[_address] - _amount;
         totalSupply = totalSupply - _amount;
