@@ -13,7 +13,6 @@ contract KYCManager is Ownable {
         bool isVerified;
     }
 
-
     mapping(address => KYC) private _userKYC;
 
     event KYCSubmitted(address indexed user, string name, string nationality);
@@ -34,7 +33,6 @@ contract KYCManager is Ownable {
         require(bytes(idNumber).length > 0, "ID Number is required");
         require(bytes(idImage).length > 0, "ID Image is required");
 
-       
         _userKYC[msg.sender] = KYC({
             name: name,
             email: email,
@@ -62,4 +60,3 @@ contract KYCManager is Ownable {
         return _userKYC[user].isVerified;
     }
 }
-
