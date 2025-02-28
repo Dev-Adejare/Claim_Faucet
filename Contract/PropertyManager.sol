@@ -4,6 +4,7 @@ pragma solidity ^0.8.20;
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/utils/math/SafeMath.sol";
 
+
 contract PropertyManager is Ownable {
     using SafeMath for uint256;
 
@@ -20,6 +21,7 @@ contract PropertyManager is Ownable {
         bool isForSale;
         uint256 salePrice;
     }
+    
 
     mapping(uint256 => PropertyInfo) private _propertyInfo;
     mapping(uint256 => uint256) private _availableShares;
