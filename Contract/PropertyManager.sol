@@ -4,7 +4,6 @@ pragma solidity ^0.8.20;
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/utils/math/SafeMath.sol";
 
-
 contract PropertyManager is Ownable {
     using SafeMath for uint256;
 
@@ -21,8 +20,7 @@ contract PropertyManager is Ownable {
         bool isForSale;
         uint256 salePrice;
     }
-    
-    
+
     mapping(uint256 => PropertyInfo) private _propertyInfo;
     mapping(uint256 => uint256) private _availableShares;
     uint256 private _nextPropertyId = 1;
@@ -78,29 +76,44 @@ contract PropertyManager is Ownable {
         return newPropertyId;
     }
 
-    function calculatePurchase(uint256 propertyId, uint256 amount) public view returns (uint256, uint256) {
+    function calculatePurchase(uint256 propertyId, uint256 amount)
+        public
+        view
+        returns (uint256, uint256)
+    {
         PropertyInfo storage propertyInfo = _propertyInfo[propertyId];
         uint256 totalPrice = amount.mul(propertyInfo.pricePerShare);
         return (totalPrice, _availableShares[propertyId]);
     }
 
-    function updateAvailableShares(uint256 propertyId, uint256 amount) public onlyOwner {
+    function updateAvailableShares(uint256 propertyId, uint256 amount)
+        public
+        onlyOwner
+    {
         _availableShares[propertyId] = _availableShares[propertyId].sub(amount);
     }
 
-    function calculateLiquidationPrice(uint256 propertyId, uint256 amount) public view returns (uint256) {
+    function calculateLiquidationPrice(uint256 propertyId, uint256 amount)
+        public
+        view
+        returns (uint256)
+    {
         PropertyInfo storage property = _propertyInfo[propertyId];
         return amount.mul(property.currentValuation).div(property.totalShares);
     }
 
-    function getPropertyInfo(uint256 propertyId) public view returns (
-        string memory name,
-        string memory location,
-        uint256 totalShares,
-        uint256 pricePerShare,
-        bool isForSale,
-        uint256 salePrice
-    ) {
+    function getPropertyInfo(uint256 propertyId)
+        public
+        view
+        returns (
+            string memory name,
+            string memory location,
+            uint256 totalShares,
+            uint256 pricePerShare,
+            bool isForSale,
+            uint256 salePrice
+        )
+    {
         PropertyInfo storage property = _propertyInfo[propertyId];
         return (
             property.name,
@@ -112,8 +125,10 @@ contract PropertyManager is Ownable {
         );
     }
 
-    function updatePropertyValuation(uint256 propertyId, uint256 newValuation) public onlyOwner {
+    function updatePropertyValuation(uint256 propertyId, uint256 newValuation)
+        public
+        onlyOwner
+    {
         _propertyInfo[propertyId].currentValuation = newValuation;
     }
 }
-
