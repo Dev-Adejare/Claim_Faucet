@@ -384,11 +384,11 @@
 			]
 		},
 		"Contract/PropertyManager.sol": {
-			"keccak256": "0x1ead7d12f154116f212f2cb55cd1170d331c86634da3454b672b4d52df67f627",
+			"keccak256": "0x8d5c73a6c382ed1de7ed3eadc34f9f9b479dc17354a8704b92417d698a0cee10",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://e4dda9c1a756e1143359e62bee7e006c536ba6338cf5440eadb843018721dcf2",
-				"dweb:/ipfs/QmXHKYLsiN89VxiN5a7yCXz89cHyNAmbaPH3mwhzf9zaFq"
+				"bzz-raw://86c84bbc6602fd4ebec2275692b4791ae46b1b271cdd37eb1c5e9031cc4816d8",
+				"dweb:/ipfs/QmRMfLi65yDSSdfL2gBchHVje2YptZiEvqGhbzLn9oc2Ej"
 			]
 		}
 	},

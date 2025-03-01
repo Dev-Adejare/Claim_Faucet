@@ -22,6 +22,7 @@ contract PropertyManager is Ownable {
         uint256 salePrice;
     }
     
+    
     mapping(uint256 => PropertyInfo) private _propertyInfo;
     mapping(uint256 => uint256) private _availableShares;
     uint256 private _nextPropertyId = 1;
