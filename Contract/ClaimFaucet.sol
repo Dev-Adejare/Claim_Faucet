@@ -24,6 +24,7 @@ contract ClaimFaucet is DltToken{
     function claimToken(address _address) public {
         require(_address != address(0), "Zero address not allowed");
 
+        
         if(hasClaimedBefore[_address]){
 
             User storage currentUser = users[_address];
@@ -37,6 +38,7 @@ contract ClaimFaucet is DltToken{
 
             emit TokenClaimSuccessful(_address, CLAIMABLE_AMOUNT, block.timestamp);
 
+        
         }else{
             hasClaimedBefore[_address] = true;
             mint(CLAIMABLE_AMOUNT, _address);
