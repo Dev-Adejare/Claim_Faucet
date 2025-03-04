@@ -305,11 +305,11 @@
 	},
 	"sources": {
 		"Contract/ClaimFaucet.sol": {
-			"keccak256": "0x86133096a716a030918b538d3cf8af6df0dad1ee771957750044936fe5cdad03",
+			"keccak256": "0xf33e600359f6e0b67e8e87484ae63bfadc4bd7f7f8fd32d621347003818a4763",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://7deb98ab07af15b43eeee73b6b97a4cbceebd459c72f7cb17ceeb9563fe48cd1",
-				"dweb:/ipfs/QmeYQCTJAEtuB8Dpz4CxkehG9oPsgsjp6yfasTGtUKDGGm"
+				"bzz-raw://ac8220c77a44be93eaa5183b8f2bc7459005c380de74ad7ff7deb66d5edf1569",
+				"dweb:/ipfs/QmdgAh9wpWw4vsDNaWPBy1eqKn1riNWMNYjqJbFPhUd9fq"
 			]
 		},
 		"Contract/DltToken.sol": {
