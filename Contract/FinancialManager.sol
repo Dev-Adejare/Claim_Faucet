@@ -23,7 +23,7 @@ contract FinancialManager is Ownable {
     mapping(uint256 => mapping(address => uint256)) private _unclaimedRentalIncome;
 
     // Add this new mapping to track token balances
-    
+
     mapping(uint256 => mapping(address => uint256)) private _tokenBalances;
 
     event RentalIncomeUpdated(uint256 indexed propertyId, uint256 totalRentalIncome);
@@ -47,6 +47,7 @@ contract FinancialManager is Ownable {
         });
     }
 
+    
     function updateRentalIncome(uint256 propertyId, uint256 newRentalIncome) public onlyOwner {
         PropertyFinancials storage financials = _propertyFinancials[propertyId];
         require(financials.isActive, "Property is not active");
@@ -63,6 +64,7 @@ contract FinancialManager is Ownable {
         emit RentalIncomeUpdated(propertyId, newRentalIncome);
     }
 
+    
     function distributeRentalIncome(uint256 propertyId) public {
         PropertyFinancials storage financials = _propertyFinancials[propertyId];
         require(financials.isActive, "Property is not active");
