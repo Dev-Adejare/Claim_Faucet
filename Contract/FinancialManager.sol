@@ -109,6 +109,7 @@ contract FinancialManager is Ownable {
         return totalIncome.sub(_unclaimedRentalIncome[propertyId][user]);
     }
 
+    
     function recordExpense(uint256 propertyId, uint256 amount, string memory description) public onlyOwner {
         PropertyFinancials storage financials = _propertyFinancials[propertyId];
         require(financials.isActive, "Property is not active");
