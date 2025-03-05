@@ -83,6 +83,7 @@ contract FinancialManager is Ownable {
         }
     }
 
+    
     function updateUnclaimedRentalIncome(uint256 propertyId, address user, uint256 amount) public onlyOwner {
         PropertyFinancials storage financials = _propertyFinancials[propertyId];
         _unclaimedRentalIncome[propertyId][user] = _unclaimedRentalIncome[propertyId][user].add(
@@ -90,6 +91,7 @@ contract FinancialManager is Ownable {
         );
     }
 
+    
     function claimRentalIncome(uint256 propertyId, address user) public onlyOwner returns (uint256) {
         PropertyFinancials storage financials = _propertyFinancials[propertyId];
         uint256 totalIncome = balanceOf(user, propertyId).mul(financials.rentalIncomePerShare).div(1e18);

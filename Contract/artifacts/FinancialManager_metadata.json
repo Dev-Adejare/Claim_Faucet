@@ -493,11 +493,11 @@
 			]
 		},
 		"Contract/FinancialManager.sol": {
-			"keccak256": "0xef214721710d3d73d15519db1f4d0eebd6d066be0a39e12580a1c80ea4f44f7a",
+			"keccak256": "0x0b2cc94463c90563d84ed9a896745c757c2667744072690bac58970433d0019e",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://ade083ec805e89e3f1c23d9dc081f0a1817a6613f9f8f636113dbce215d4871d",
-				"dweb:/ipfs/QmbuXod7itCQx9TbYDRS73LtPQ2LiDjjNEFo8hKZZR6ceC"
+				"bzz-raw://97629c247922eaf40169d32ef61f9dcf8f94b01faafed2b28bbe71a096dc292f",
+				"dweb:/ipfs/QmNeQ98NjaUi7DyoFVJZLVtTMaNygDpW5zdWzt8gaVki9E"
 			]
 		}
 	},
