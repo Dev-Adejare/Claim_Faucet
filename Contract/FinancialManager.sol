@@ -23,6 +23,7 @@ contract FinancialManager is Ownable {
     mapping(uint256 => mapping(address => uint256)) private _unclaimedRentalIncome;
 
     // Add this new mapping to track token balances
+    
     mapping(uint256 => mapping(address => uint256)) private _tokenBalances;
 
     event RentalIncomeUpdated(uint256 indexed propertyId, uint256 totalRentalIncome);
