@@ -77,7 +77,7 @@ contract RealEstateToken is ERC1155, Ownable {
     function buyTokenShares(uint256 propertyId, uint256 amount) public payable {
         require(
             kycManager.isUserVerified(msg.sender),
-            "User must be KYC verified to buy shares"
+            "User must be KYC verified to enable buy shares"
         );
         (uint256 totalPrice, uint256 availableShares) = propertyManager.calculatePurchase(propertyId, amount);
         require(msg.value >= totalPrice, "Insufficient funds sent");
