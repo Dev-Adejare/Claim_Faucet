@@ -46,6 +46,7 @@ contract RealEstateToken is ERC1155, Ownable {
         kycManager = KYCManager(_kycManager);
     }
 
+    
     function tokenizeProperty(
         string memory name,
         string memory location,
