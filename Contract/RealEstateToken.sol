@@ -8,6 +8,7 @@ import "./PropertyManager.sol";
 import "./FinancialManager.sol";
 import "./KYCManager.sol";
 
+
 contract RealEstateToken is ERC1155, Ownable {
     using SafeMath for uint256;
 
