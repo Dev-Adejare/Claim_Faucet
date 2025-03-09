@@ -14,10 +14,10 @@ contract KYCManager is Ownable {
     }
 
     mapping(address => KYC) private _userKYC;
-
+    
     event KYCSubmitted(address indexed user, string name, string nationality);
     event KYCVerified(address indexed user, bool isVerified);
-    
+
 
     constructor() Ownable(msg.sender) {}
 
@@ -27,6 +27,7 @@ contract KYCManager is Ownable {
         string memory nationality,
         string memory idNumber,
         string memory idImage
+
     ) public {
         require(bytes(name).length > 0, "Name is required");
         require(bytes(email).length > 0, "Email is required");
@@ -45,6 +46,7 @@ contract KYCManager is Ownable {
 
         emit KYCSubmitted(msg.sender, name, nationality);
     }
+    
 
     function verifyKYC(address user, bool status) public onlyOwner {
         require(
