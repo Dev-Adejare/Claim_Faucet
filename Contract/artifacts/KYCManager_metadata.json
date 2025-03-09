@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.26+commit.8a97fa7a"
+		"version": "0.8.28+commit.7893614a"
 	},
 	"language": "Solidity",
 	"output": {
@@ -265,11 +265,11 @@
 			]
 		},
 		"Contract/KYCManager.sol": {
-			"keccak256": "0x1e5854cb31f314330ddca65b37999bb1cbf6acef9b543a9513489cf02ebab841",
+			"keccak256": "0xabd05f42760c7e4d8cac76e96a3954193ff6c2385614bd26ed983d9868e28128",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d0540b4c35305b737cf9192cf6cc23c60ceb44def3dc353b0472d4d199ff8c9f",
-				"dweb:/ipfs/Qmej8m8adoLj1kzFUpwwKBHFudVVE5Hj7FeNNAm3PT1dJA"
+				"bzz-raw://67dd997fbcffab64daffb8159e41e5c3d947557197c7d66711d716d53760fb04",
+				"dweb:/ipfs/QmeqcS1gdv7UgGUiWMZNZVNv43qvu7z5mMBjGhPcAS2oGT"
 			]
 		}
 	},
