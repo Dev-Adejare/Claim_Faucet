@@ -17,6 +17,7 @@ contract KYCManager is Ownable {
 
     event KYCSubmitted(address indexed user, string name, string nationality);
     event KYCVerified(address indexed user, bool isVerified);
+    
 
     constructor() Ownable(msg.sender) {}
 
