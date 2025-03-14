@@ -19,6 +19,7 @@ contract FinancialManager is Ownable {
         uint256 currentValuation;
     }
 
+    
     mapping(uint256 => PropertyFinancials) private _propertyFinancials;
     mapping(uint256 => mapping(address => uint256)) private _unclaimedRentalIncome;
 
