@@ -1141,19 +1141,19 @@
 			]
 		},
 		"Contract/FinancialManager.sol": {
-			"keccak256": "0x590b07810df15fbf1cb131fe67bab050f908af2fad9f3261f2b15771c371cca7",
+			"keccak256": "0x4ee8eb904c9521a614a4740992b7fc95d2150c259c976362306d52621d299a27",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://563d08d7a2589a456dd3e7e9c706cc09b25e529adb1a3cbcdde4f947a212f4be",
-				"dweb:/ipfs/QmWV6figrm1iEKoccQXTt6XHA2jfQ8wYTu5qPMfD71k9DS"
+				"bzz-raw://c2f138485b10f221e88c1c22138712d963971156578f5a0f02755cc7d4e058a2",
+				"dweb:/ipfs/QmPmR6zUuu8Vx8ujsHiZ532J8vhdsiofZn6idMpPPrR45M"
 			]
 		},
 		"Contract/KYCManager.sol": {
-			"keccak256": "0x1e5854cb31f314330ddca65b37999bb1cbf6acef9b543a9513489cf02ebab841",
+			"keccak256": "0xabd05f42760c7e4d8cac76e96a3954193ff6c2385614bd26ed983d9868e28128",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d0540b4c35305b737cf9192cf6cc23c60ceb44def3dc353b0472d4d199ff8c9f",
-				"dweb:/ipfs/Qmej8m8adoLj1kzFUpwwKBHFudVVE5Hj7FeNNAm3PT1dJA"
+				"bzz-raw://67dd997fbcffab64daffb8159e41e5c3d947557197c7d66711d716d53760fb04",
+				"dweb:/ipfs/QmeqcS1gdv7UgGUiWMZNZVNv43qvu7z5mMBjGhPcAS2oGT"
 			]
 		},
 		"Contract/PropertyManager.sol": {
