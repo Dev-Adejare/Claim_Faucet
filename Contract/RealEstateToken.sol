@@ -96,6 +96,7 @@ contract RealEstateToken is ERC1155, Ownable {
         emit TokenSharesPurchased(propertyId, msg.sender, amount, totalPrice);
     }
 
+
     function claimRentalIncome(uint256 propertyId) public {
         require(balanceOf(msg.sender, propertyId) > 0, "User does not own shares of this property");
         financialManager.distributeRentalIncome(propertyId);
@@ -103,6 +104,7 @@ contract RealEstateToken is ERC1155, Ownable {
         payable(msg.sender).transfer(unclaimedIncome);
         emit RentalIncomeClaimed(msg.sender, propertyId, unclaimedIncome);
     }
+    
 
     function liquidateShares(uint256 propertyId, uint256 amount) public {
         require(balanceOf(msg.sender, propertyId) >= amount, "Insufficient shares to liquidate");
