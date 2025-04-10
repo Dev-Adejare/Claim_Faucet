@@ -103,6 +103,7 @@ contract FinancialManager is Ownable {
         return unclaimedIncome;
     }
 
+
     function getUnclaimedRentalIncome(uint256 propertyId, address user) public view returns (uint256) {
         PropertyFinancials storage financials = _propertyFinancials[propertyId];
         uint256 totalIncome = balanceOf(user, propertyId).mul(financials.rentalIncomePerShare).div(1e18);
@@ -117,6 +118,7 @@ contract FinancialManager is Ownable {
         financials.totalExpenses = financials.totalExpenses.add(amount);
         emit ExpenseRecorded(propertyId, amount, description);
     }
+    
 
     function getFinancialReport(uint256 propertyId) public view returns (
         uint256 totalRentalIncome,
