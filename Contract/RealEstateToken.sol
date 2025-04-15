@@ -36,6 +36,7 @@ contract RealEstateToken is ERC1155, Ownable {
         uint256 totalPrice
     );
 
+    
     constructor(
         address _propertyManager,
         address _financialManager,
@@ -46,7 +47,6 @@ contract RealEstateToken is ERC1155, Ownable {
         kycManager = KYCManager(_kycManager);
     }
 
-    
     function tokenizeProperty(
         string memory name,
         string memory location,
