@@ -36,8 +36,7 @@ contract RealEstateToken is ERC1155, Ownable {
         uint256 totalPrice
     );
 
-    
-    constructor(
+     constructor(
         address _propertyManager,
         address _financialManager,
         address _kycManager

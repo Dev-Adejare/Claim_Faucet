@@ -1165,11 +1165,11 @@
 			]
 		},
 		"Contract/RealEstateToken.sol": {
-			"keccak256": "0x41bd31f78b6f699fa583fd4ecda21848b418450bd528ccdbbf57b2e25f73b42d",
+			"keccak256": "0x2605977c1a1c5f3c259333b95e74bc62a50c130b6e6d1f417c8e943f06e4572c",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://a7a8efb74f6ed98f3c07a3e06a37d3671d2b5a914e2274d8ccd1f68d77b0de2b",
-				"dweb:/ipfs/QmXKv4X1ry3TcA4BwtkuJQJ6WaCoj6NbQ6MuBoU2SXWH2z"
+				"bzz-raw://811bf35c841d5cf652af330f36a36aa36fd83bc9c546f25125bb8f21cfd408a9",
+				"dweb:/ipfs/QmV4qt3aQvhr4kgQ3vvLxuzrZt3r1Ei3p7Q3McNnMwe9Zk"
 			]
 		}
 	},
