@@ -13,8 +13,7 @@ contract DltToken {
     mapping(address => mapping(address => uint256)) allow;
 
     
-    
-     constructor(string memory _name, string memory _symbol) {
+    constructor(string memory _name, string memory _symbol) {
         tokenName = _name;
         tokenSymbol = _symbol;
         owner = msg.sender;
