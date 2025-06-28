@@ -24,11 +24,13 @@ contract RealEstateToken is ERC1155, Ownable {
         uint256 amount,
         uint256 totalPrice
     );
+
     event RentalIncomeClaimed(
         address indexed account,
         uint256 indexed propertyId,
         uint256 amount
     );
+
     event SharesLiquidated(
         uint256 indexed propertyId,
         address indexed seller,
@@ -104,7 +106,6 @@ contract RealEstateToken is ERC1155, Ownable {
         emit RentalIncomeClaimed(msg.sender, propertyId, unclaimedIncome);
     }
     
-
     function liquidateShares(uint256 propertyId, uint256 amount) public {
         require(balanceOf(msg.sender, propertyId) >= amount, "Insufficient shares to liquidate");
         uint256 totalPrice = propertyManager.calculateLiquidationPrice(propertyId, amount);
@@ -137,28 +138,6 @@ contract RealEstateToken is ERC1155, Ownable {
     ) {
         return financialManager.getFinancialReport(propertyId);
     }
-
-    // function _afterTokenTransfer(
-    //     address operator,
-    //     address from,
-    //     address to,
-    //     uint256[] memory ids,
-    //     uint256[] memory amounts,
-    //     bytes memory data
-    // ) internal virtual override {
-    //     super._afterTokenTransfer(operator, from, to, ids, amounts, data);
-
-    //     for (uint256 i = 0; i < ids.length; i++) {
-    //         uint256 id = ids[i];
-    //         uint256 amount = amounts[i];
-    //         if (from != address(0)) {
-    //             financialManager.updateTokenBalance(id, from, amount, false);
-    //         }
-    //         if (to != address(0)) {
-    //             financialManager.updateTokenBalance(id, to, amount, true);
-    //         }
-    //     }
-    // }
 
     function balanceOf(address account, uint256 id) public view virtual override returns (uint256) {
         return financialManager.balanceOf(account, id);
